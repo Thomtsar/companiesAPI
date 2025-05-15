@@ -10,16 +10,16 @@ Bellow exists all the available methods with their instructions and sample paylo
 **CREATE**
 POST  http://localhost:8080/companies/
 
-<pre> ```json 
+<pre> '''json 
 {
 "name":"Google",
 "amount_of_employees":500000,
 "description": "Techonology",
 "type":"Corporations",
 "registered":true
-}  ``` </pre>
+} '''</pre>
 Example response:
-<pre> ```json 
+<pre> '''json 
 {
     "id": "c4bb005f-e0dd-4d4a-b11d-e267fa4e84ae",
     "name": "Google",
@@ -28,16 +28,19 @@ Example response:
     "registered": true,
     "type": "Corporations"
 }
-<pre> ```json 
+'''</pre>
+
 
 **GET (ALL)**
 GET http://localhost:8080/companies/
 
 **GET (one)**
 GET (ONE) http://localhost:8080/companies/{ID}
+example http://localhost:8080/companies/c4bb005f-e0dd-4d4a-b11d-e267fa4e84ae
 
 **PATCH**
 PATCH http://localhost:8080/companies/{ID}
+example http://localhost:8080/companies/c4bb005f-e0dd-4d4a-b11d-e267fa4e84ae
 <pre> ```json 
 {
 "name":"Google",
@@ -46,8 +49,9 @@ PATCH http://localhost:8080/companies/{ID}
 "type":"Corporations",
 "registered":true
 }
-<pre> ```json 
+'''</pre>
     
 DELETE http://localhost:8080/companies/{ID}
+example http://localhost:8080/companies/c4bb005f-e0dd-4d4a-b11d-e267fa4e84ae
 
 
