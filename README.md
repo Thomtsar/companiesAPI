@@ -9,13 +9,14 @@ The database is empty so the user first have to create one or more companies. Na
 Bellow exists all the available methods with their instructions and sample payload for the cases that is needed.  Authentication is required for POST,PATCH and DELETE. Additional error handling for the mandatory fields and the LOV of types has been implemented.
 **CREATE**
 POST  http://localhost:8080/companies/
-{
+
+<pre> ```json {
 "name":"Google",
 "amount_of_employees":500000,
 "description": "Techonology",
 "type":"Corporations",
 "registered":true
-}
+}  ``` </pre>
 Example response:
 {
     "id": "c4bb005f-e0dd-4d4a-b11d-e267fa4e84ae",
