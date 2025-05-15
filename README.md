@@ -54,4 +54,13 @@ example http://localhost:8080/companies/c4bb005f-e0dd-4d4a-b11d-e267fa4e84ae
 DELETE http://localhost:8080/companies/{ID}
 example http://localhost:8080/companies/c4bb005f-e0dd-4d4a-b11d-e267fa4e84ae
 
+**Authedication**
+The authedication is accessible from the init.sql file but the 2 users who has access are the bellow:
+username:admin
+password:admin
+
+username:manager
+password:1234
+
+
 
